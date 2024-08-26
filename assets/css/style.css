@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --heading-font: 'Open Sans', sans-serif;
+  --body-font: 'Nunito', sans-serif;
+  --main-color: #8454f5;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* header css */
+.bg-custom {
+  background: var(--main-color);
+  color: #cac0c0;
+  &:hover {
+    background: #08b38e;
+  }
+}
+
+.header-firat-div {
+  padding-top: 100px;
+  h1 {
+    font-size: 3.75rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+
+    @media (max-width: 991.98px) { 
+      font-size: 40px;
+      margin-bottom: 15px;
+     }
+  }
+  p {
+    font-size: 18px;
+    line-height: 32px;
+    padding-left: 10px;
+  }
+  .left-border {
+    border-left: 8px solid rgb(255, 178, 36);
+    height: 90px;
+  }
+  form {
+      background: rgba(132, 84, 245, 0.105);
+      max-width:550px;
+
+        input {
+        height: 110px;
+        background: transparent;
+
+        &:focus {
+        outline: none;
+         }   
+      
+        &::placeholder{
+          font-size: 18px;
+          font-weight: 400;
+        }
+
+      }
+    
+    
+  }
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 3fr 6fr 2fr 1fr;
+  gap: 10px;
+  color: #000;
+}
+
+/* banner logo */
+.banner-logo {
+  img {
+    padding: 80px 0px;
+  }
+}
+
+
+/* servise-section */
+
+.servise-section{
+
+ .left-border {
+    border-left: 8px solid rgb(255, 178, 36);
+    height: 90px;
+  }
+  
+  h2{
+    line-height: 70px;
+    font-size: 56px;
+
+    @media (max-width: 991.98px) { 
+      font-size: 40px;
+      padding: 0;
+     }
+  }
+
+  .service-item {
+     padding:  25px;
+     border-radius: 20px;
+     background-color: #fff;
+   border: 1px solid rgba(94, 33, 236, 0.40);
+
+
+      &:hover{
+        background: #8454f5;
+         transition: 0.3s;
+          i{
+            background-color: rgba(252, 252, 254, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+    &.color-2{
+     i{
+    
+   
+    background: rgb(209, 178, 226);
+    color: #820bdd;
+   }
+ 
+     
+    a{
+      color: #000;
+    }
+    &:hover{
+        background: #11684b;
+         transition: 0.3s;
+          i{
+            background-color: rgba(252, 252, 254, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+    }
+    &.color-3{
+      i{
+    
+   
+    background: rgb(226, 223, 153);
+    color: #67670f;
+   }
+ 
+     
+    a{
+      color: #000;
+    }
+    &:hover{
+        background: #6c6835;
+         transition: 0.3s;
+          i{
+            background-color: rgba(252, 252, 254, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+
+    }
+    &.color-4{
+
+      &:hover{
+        background: #73354f;
+         transition: 0.3s;
+          i{
+            background-color: rgba(205, 106, 142, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+    }
+    &.color-5{
+      &:hover{
+        background: #297e89;
+         transition: 0.3s;
+          i{
+            background-color: rgba(124, 205, 205, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+    }
+    &.color-6{
+      &:hover{
+        background: #3ba52d;
+         transition: 0.3s;
+          i{
+            background-color: rgba(110, 201, 120, 0.15);
+            color: #FCFCFE;
+          }
+          h4{
+            color: #fff;
+          }
+          p,
+          a{
+            color: #ecdbdb;
+          }
+         
+      }
+    }
+
+   i{
+    
+    width: 60px;
+    height: 60px;
+    background: rgba(254, 196, 95, 0.15);
+    color: #FEC35F;
+    border-radius: 15px;
+   }
+ 
+     
+    a{
+      color: #000;
+    }
+   
+  }
+}
+
+/* Join with any business tasks and any goals */
+.goals-area{
+
+
+  .text-area{
+    padding: 120px 0;
+  }
+}
+
+/*messy distribution lists start
+ */
+.container{ 
+ .multiple-btn{
+  width: 100%;
+  height: auto;
+  background: rgba(132, 84, 245, 0.232);
+  border-radius: 15px;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+
+  .btn-width{
+    width: 100%;
+  }
+  button{
+    width: 240px;
+    height: 60px;
+    
+    
+  }
+ }
+
+ .distribution{
+  h2{
+    padding-right: 150px;
+  }
+  p{
+    padding-right: 100px;
+  }
+ }
+}
