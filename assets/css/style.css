@@ -19,8 +19,6 @@ body {
 a {
   text-decoration: none;
 }
-
-/* header css */
 .bg-custom {
   background: var(--main-color);
   color: #cac0c0;
@@ -28,6 +26,10 @@ a {
     background: #08b38e;
   }
 }
+.color-custom{
+  color:#8454F5 ;
+}
+/* header css */
 
 .header-firat-div {
   padding-top: 100px;
@@ -302,4 +304,70 @@ a {
     padding-right: 100px;
   }
  }
+}
+
+/* Build the right plan for your team */
+
+.heading-area {
+  h2{
+    font-size: 56px;
+    max-width: 700px;
+  }
+}
+.pro-plan{
+  background: #181059;
+  color: white;
+  margin-top: -30px;
+}
+.switch{
+  label{
+    position: relative;
+    width: 80px ;
+    height: 40px;
+    border-radius: 40px;
+    background: #820bdd;
+
+    &::before{
+      content: '';
+      width: 30px ;
+      height: 30px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+    }
+
+  }
+  input:checked{
+    &+label{
+
+      /* first way */
+
+      /* &::before{
+        content: '';
+        right: 5px;
+        left: auto;
+      } */
+/* sceond way */
+      &::before{
+        content: none;
+      } 
+      &::after{
+        content: '';
+        width: 30px ;
+      height: 30px;
+      background: #fff;
+      border-radius: 50%;
+      position: absolute;
+      right: 5px;
+      bottom: 5px;
+
+      }
+    }
+  }
+  &:checked{
+    
+  }
+  
 }
