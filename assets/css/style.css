@@ -35,15 +35,29 @@ a {
 
 .header-firat-div {
   padding-top: 100px;
+
+          @media (min-width: 0px) {padding-top: 20px;  }
+
+          @media (min-width: 576px) { padding-top: 30px; }
+
+
+          @media (min-width: 768px) { padding-top: 40px; }
+
+
+          @media (min-width: 992px) { padding-top: 60px;  }
+
+
   h1 {
     font-size: 3.75rem;
     font-weight: 600;
     margin-bottom: 20px;
 
-    @media (max-width: 991.98px) { 
-      font-size: 40px;
-      margin-bottom: 15px;
-     }
+          @media (min-width: 0px) { font-size: 35px;  }
+
+          @media (min-width: 576px) { font-size: 40px; }
+
+          @media (min-width: 768px) { max-width: 90%; }
+          @media (min-width: 992px) { font-size: 43px;  }
   }
   p {
     font-size: 18px;
@@ -94,6 +108,10 @@ a {
 
 /* servise-section */
 
+.servise {
+
+
+
 .servise-section{
 
  .left-border {
@@ -105,10 +123,22 @@ a {
     line-height: 70px;
     font-size: 56px;
 
-    @media (max-width: 991.98px) { 
-      font-size: 40px;
-      padding: 0;
-     }
+          
+          @media (min-width: 0px) { font-size: 35px; line-height: 35px; margin-bottom: 40px; }
+
+          @media (min-width: 576px) { font-size: 40px; line-height: 40px; margin-bottom: 50px;}
+
+
+          @media (min-width: 768px) {font-size: 35px; line-height: 48px; }
+
+
+          @media (min-width: 992px) { font-size: 46px; line-height: 60px; padding-right: 20px; }
+
+
+
+
+  
+ 
   }
 
   .service-item {
@@ -266,6 +296,8 @@ a {
   }
 }
 
+}
+
 /* Join with any business tasks and any goals */
 .goals-area{
 
@@ -298,17 +330,14 @@ a {
   }
  }
 
- .distribution{
-  h2{
-    padding-right: 150px;
-  }
-  p{
-    padding-right: 100px;
-  }
- }
 }
 
 /* Build the right plan for your team */
+
+
+.plan-for-team{
+
+
 
 .heading-area {
   h2{
@@ -320,6 +349,8 @@ a {
   background: #181059;
   color: white;
   margin-top: -30px;
+
+
 }
 .switch{
   label{
@@ -378,7 +409,7 @@ a {
   }
   
 }
-
+}
 /* Watch a demo */
 
 .watch-demo{
@@ -386,6 +417,8 @@ a {
   .ultra-faste{
     max-width: 150px;
   }
+
+  
 
 }
 
@@ -407,6 +440,14 @@ a {
 
   input{
     width: 512px;
-    height: 80px;
+    height: 60px;
+   outline-style: none !important;
+  }
+
+  .button-last{
+    width: 140px;
+    height: 45px;
+    background: #8454f5;
+    border-radius: 10px;
   }
 }
